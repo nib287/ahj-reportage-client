@@ -1,0 +1,1 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/lts89fymj2ndnnlq?svg=true)](https://ci.appveyor.com/project/nib287/ahj-reportage-client)
