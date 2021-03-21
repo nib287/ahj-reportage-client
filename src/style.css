@@ -1,0 +1,54 @@
+body {
+    margin: 0; 
+    padding: 40px;
+    background-image: url(./img/ahoy.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page {
+    margin: 0 auto;
+    padding: 60px;
+    width: 600px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    height: 600px;
+    overflow: auto;
+}
+
+.container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.container::-webkit-scrollbar-track {
+    box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #f9f9fd;
+    border-radius: 10px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(180deg, #fb00d1, #008cea);
+}
+
+.container__item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    list-style-type: none;
+}
+
+.container__date {
+    font-size: 14px;
+    color: rgb(124, 123, 143);
+}
+.container__message {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(18, 12, 112);
+}
