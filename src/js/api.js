@@ -4,7 +4,7 @@ export default class API {
     }
     
     init() {
-        const eventSource = new EventSource("https://ahj-reportage.herokuapp.com//sse");
+        const eventSource = new EventSource("https://ahj-reportage.herokuapp.com/sse");
         eventSource.addEventListener('message', (evt) => {
             const message = JSON.parse(evt.data);
             this.createMessage(message);
