@@ -1,7 +1,7 @@
 import '../style.css';
-import API from './api.js';
+import ReportageWidget from './ReportageWidget.js';
 
-const api = new API()
-api.init();
+const reportageWidget = new ReportageWidget("http://localhost:8080/sse");
+reportageWidget.init();
 
 
