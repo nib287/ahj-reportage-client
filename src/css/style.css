@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page {
+  margin: 0 auto;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  max-height: 95vh;
+  overflow: auto;
+}
+.container::-webkit-scrollbar {
+  width: 10px;
+}
+.container::-webkit-scrollbar-track {
+  box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: #f9f9fd;
+  border-radius: 10px;
+}
+.container::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(180deg, #fb00d1, #008cea);
+}
+.container .container__item {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  list-style-type: none;
+  font-size: 14px;
+}
+.container .container__item .container__img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  text-align: center;
+}
+.container .container__item .container__date {
+  font-size: 10px;
+  color: #7c7b8f;
+}
+.container .container__item .container__message {
+  position: relative;
+  margin-top: 0;
+  font-weight: 600;
+  color: #120c70;
+}
+
+@media (min-width: 500px) {
+  body {
+    background-image: url(../img/ahoy.jpg);
+    padding-top: 60px;
+  }
+
+  .page {
+    max-width: 850px;
+    padding: 60px;
+  }
+
+  .container {
+    max-height: 800px;
+  }
+  .container .container__item {
+    font-size: 18px;
+  }
+}
