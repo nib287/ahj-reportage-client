@@ -13,10 +13,6 @@ export default class ReportageWidget {
         
         eventSource.addEventListener('message', (evt) => {
             const message = JSON.parse(evt.data);
-<<<<<<< HEAD
-=======
-            console.log(evt.data);
->>>>>>> 2fd81b7df659a81f9def558334f007a4eafb55b1
             this.createMessage(message.value, message.date, message.type);
         });
 
